@@ -1,0 +1,71 @@
+p{
+    font-size: large;
+    font: bold;
+}
+
+
+table{
+    width: 100%;
+
+}
+.image1{
+     margin-left: 400px; 
+    width: 150px;
+    height: 150px;
+    /* position: absolute; */
+}
+.image1:hover{
+    animation: moveAndRotate 7s 2 linear;
+}
+@keyframes moveAndRotate{
+    0%{
+        transform: translateX(0) rotate(0deg);
+    }
+    30%{
+        transform: translateX(150px) rotate(180deg);
+    }
+    50%{
+        transform: translateX(300px) rotate(360deg);
+    }
+}
+.image2{
+    margin-left: 400px;
+    width: 150px;
+    height: 150px;
+   
+    /* position: absolute;*/ 
+}
+.image2:hover{
+    animation: leftRotate 7s 2 linear;
+}
+@keyframes leftRotate{
+    0%{
+        transform: translate(0) rotate(odeg);
+    }
+    30%{
+        transform: translate(-150px) rotate(-180deg);
+    }
+    50%{
+        transform: translate(-300px) rotate(-360deg);
+    }
+}
+.image3{
+    margin-left: 400px;
+    width: 150px;
+    height: 150px;
+    /* position: absolute; */
+}
+.image3:hover{
+    animation: bottomRotate 7s 2 linear;
+}
+@keyframes bottomRotate{
+    0%{
+        transform: translate(0,0) rotate(0deg);
+    }
+    30%{
+        transform: translate(0px,150px) rotate(180deg);
+    }
+    50%{
+        transform: translate(0px,300px) rotate(360deg);
+    }
+}
